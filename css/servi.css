@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*cards*/
+.container__card-primary{
+    padding-top: 100px;
+}
+
+.card__primary{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text__card-primary{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text__card-primary p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text__card-primary h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container__box-cardPrimary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box__card-primary{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box__card-primary:hover{
+    border: 1px solid transparent green;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box__card-primary h2{
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box__card-primary p{
+    margin-top: 20px;
+}
+
+/*Sobre nosotros*/
+
+.container__about{
+    padding: 100px 0px;
+    background: var(--background-color);
+    margin-top: 100px;
+}
+
+.about{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text__about{
+    width: 100%;
+    padding-right: 40px;
+}
+
+.text__about h1{
+    color: var(--color_text-secundary);
+    font-weight: 600;
+}
+
+.text__about p{
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--color_text-tertiary);
+}
+
+
+.image__about{
+    width: 100%;
+    display: flex;
+}
+
+.image__about img{
+    width: 300px;
+}
+
+
+
+.card__service img{
+    width: 50px;
+}
+
+.card__service i{
+    font-size: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: var(--color_text-primary);
+}
+
+/*Servicios Text*/
+#parrafo  {
+    color: #F7DF47;
+    font-size: 50px;
+}
+
+/*efecto hover cards*/
+
+.card__service {
+    /* Estilos predeterminados para las tarjetas */
+    /* ... Tus estilos predeterminados aquí ... */
+
+    /* Agrega una transición suave para la propiedad transform */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover para las tarjetas */
+.card__service:hover {
+    background: rgb(68,246,24);
+    background: linear-gradient(90deg, rgba(68,246,24,0.5858718487394958) 0%, rgba(93,230,64,1) 14%, rgba(102,223,50,0.7063200280112045) 100%);/* Cambia el fondo a verde neón */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    transform: scale(1.1); /* Aplica un zoom al 110% (puedes ajustar según tu preferencia) */
+}
